@@ -23,7 +23,7 @@ import com.yandex.runtime.image.ImageProvider
 class MapFragment : Fragment() {
 
     private lateinit var mapView: MapView
-    private var userLocationLayer: UserLocationLayer? = null
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,10 +41,6 @@ class MapFragment : Fragment() {
         super.onCreate(savedInstanceState)
         MapKitFactory.initialize(context)
         val mapKit = MapKitFactory.getInstance()
-        userLocationLayer = mapKit.createUserLocationLayer(mapView.mapWindow)
-        userLocationLayer!!.isVisible = true
-        userLocationLayer!!.setHeadingEnabled(true)
-        userLocationLayer!!.setObjectListener(this)
     }
 
 
@@ -74,42 +70,6 @@ class MapFragment : Fragment() {
         mapView.onStop()
         MapKitFactory.getInstance().onStop()
     }
-
-
-    private fun onObjectAdded (UserLocationView: userLocationView) {
-        userLocationLayer!!.setAnchor(
-            PointF(
-                (mapView.width * 0.5).toFloat(),
-                (mapView.height * 0.5).toFloat()),
-            PointF((mapView.width * 0.5).toFloat(),
-                (mapView.height * 0.83).toFloat())
-                )
-        userLocationView.getArrow().setIcon(ImageProvider.fromResource(this, R.drawable.user_arrow))
-
-        val pinIcon: CompositeIcon = userLocationView.getPin().useCompositeIcon()
-
-        pinIcon.setIcon(
-            "icon",
-            ImageProvider.fromResource(this, R.drawable.icon),
-            IconStyle().setAnchor(PointF(0f, 0f))
-                .setRotationType(RotationType.ROTATE)
-                .setZIndex(0f)
-                .setScale(1f)
-        )
-
-        pinIcon.setIcon(
-            "pin",
-            ImageProvider.fromResource(this, R.drawable.search_result),
-            IconStyle().setAnchor(PointF(0.5f, 0.5f))
-                .setRotationType(RotationType.ROTATE)
-                .setZIndex(1f)
-                .setScale(0.5f)
-        )
-
-    }
-    fun onObjectRemoved(view: UserLocationView?) {}
-
-    fun onObjectUpdated(view: UserLocationView?, event: ObjectEvent?) {}
 
 
 }
