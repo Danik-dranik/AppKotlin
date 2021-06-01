@@ -3,8 +3,8 @@ package com.kotlincodes.bottomnavigationview
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import com.yandex.mapkit.MapKitFactory
 import kotlinx.android.synthetic.main.activity_main.*
-
 
 
 
@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity()  {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        MapKitFactory.setApiKey("500d178d-0225-4f83-9fbd-7d621056cc13")
 
         setContentView(R.layout.activity_main)
 
