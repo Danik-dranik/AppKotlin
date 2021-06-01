@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="@string/addplace"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            app:layout_constraintVertical_bias="0.087"
+            android:id="@+id/textView3" />
+
+    <TextView
+            android:text="@string/number_of_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintVertical_bias="0.172" />
+
+    <Button
+            android:text="@string/Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.863"
+            app:layout_constraintVertical_bias="0.879"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/custom_button"/>
+
+    <EditText
+            android:layout_width="297dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:text="@string/place_name"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.421"
+            app:layout_constraintVertical_bias="0.167"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+    <EditText
+            android:layout_width="295dp"
+            android:layout_height="46dp"
+            android:inputType="textPersonName"
+            android:text="@string/adress"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.413"
+            app:layout_constraintVertical_bias="0.044"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+    <EditText
+            android:layout_width="292dp"
+            android:layout_height="49dp"
+            android:inputType="textPersonName"
+            android:text="@string/kategory"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+            app:layout_constraintHorizontal_bias="0.403"
+            app:layout_constraintVertical_bias="0.046"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+    <EditText
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:inputType="textPersonName"
+            android:text="@string/site"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName4"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.396"
+            app:layout_constraintVertical_bias="0.092"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+    <EditText
+            android:layout_width="292dp"
+            android:layout_height="51dp"
+            android:inputType="textPersonName"
+            android:text="@string/number_phone"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.403"
+            app:layout_constraintVertical_bias="0.138"
+            tools:ignore="LabelFor"
+            android:autofillHints="" />
+
+
+</android.support.constraint.ConstraintLayout>

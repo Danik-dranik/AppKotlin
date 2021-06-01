@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Возможности</string>
+    <string name="proffile">Профиль</string>
+    <string name="map">Карта</string>
+    <string name="addplace">Добавить место</string>
+    <string name="account">Аккаунт</string>
+    <string name="back">Назад</string>
+    <string name="reg">Регистрация</string>
+    <string name="autorisation">Войти</string>
+    <string name="todo">TODO</string>
+    <string name="number_of_list">Лист 1 из 4</string>
+    <string name="Next">Далее</string>
+    <string name="place_name">Название места</string>
+    <string name="adress">Адрес</string>
+    <string name="kategory">Категория</string>
+    <string name="site">Сайт</string>
+    <string name="number_phone">Телефон</string>
+    <string name="handrail">Поручни</string>
+    <string name="elevator">Лифт</string>
+    <string name="ramps">Пандусы</string>
+    <string name="helper">Спецпомощник</string>
+    <string name="second_list">Лист 2 из 4</string>
+    <string name="where_i_am">ГДЕ Я</string>
+    <string name="Login">Name</string>
+    <string name="no_account_text">Нет акаунта? Регистрируйтесь</string>
+
+</resources>
